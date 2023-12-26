@@ -1,0 +1,17 @@
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+    /* body {
+         --newtab-overlay-color: rgba(0,0,0, 0.5) !important; 
+            } */
+    body::before {
+        content: "" ;
+        z-index: -1 ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%,rgba(255, 255, 255, 0.2) 100%), url(https://wallpapercave.com/wp/wp10962131.jpg) center;
+        background-attachment: fixed ;
+        background-size: cover ;
+        width: 100vw ;
+        height: 100vh ;
+    }
+}
